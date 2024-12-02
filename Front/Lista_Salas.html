@@ -26,30 +26,34 @@
     <div class="logout">LOGOUT</div>
   </div>
 
-  <div class="main">
+  <div class="principal">
     <header>
       <div class="logo">
         <!-- Logo do site inserida com a tag <img>, que exibe uma imagem -->
         <img src="senai.png" alt="Logo do site" />
     </header>
-    <div class="content">
+    <div class="conteudo_central">
       <h2>RESERVAS DE SALA</h2>
-      <div class="form-container">
+      <div class="form-reservas">
         <form>
-          <div class="form-group">
+          <div class="form-grupo">
             <label>DATA</label>
             <input type="date" id="data">
           </div>
-          <div class="form-group">
-            <label>HORÁRIO</label>
+          <div class="form-grupo">
+            <label>INÍCIO</label>
             <input type="time" id="horario">
           </div>
-          <div class="form-group">
+          <div class="form-grupo">
+            <label>FIM</label>
+            <input type="time" id="horario">
+          </div>
+          <div class="form-grupo">
             <label>SALA</label>
             <select id="sala">
             </select>
           </div>
-          <button type="submit">Verificar disponibilidade</button>
+          <botao type="submit">Verificar disponibilidade</botao>
         </form>
       </div>
     </div>

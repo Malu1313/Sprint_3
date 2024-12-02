@@ -29,13 +29,10 @@ function getAllSalas() {
             // Preenche o select com as salas disponíveis
             data.salas.forEach((sala) => {
                 const option = document.createElement("option");
-                option.value = sala.id; // Substitua pelo campo correto para o ID da sala
-                option.textContent = sala.numero_da_sala; // Substitua pelo campo correto para o nome da sala
+                option.value = sala.id;
+                option.textContent = `${sala.numero_da_sala} - ${sala.tipo_de_sala}`
                 selectSala.appendChild(option);
             });
-
-            // Adiciona o listener para exibir informações da sala selecionada
-            selectSala.addEventListener("change", () => mostrarInfoSala(data.salas));
         })
         .catch((error) => {
             alert("Erro ao obter salas: " + error.message);
